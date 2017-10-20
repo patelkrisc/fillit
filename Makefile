@@ -26,6 +26,8 @@ HDR = /fillit.H
 
 SRC = filler bullshit until I make something
 
+OBJ = $(SRC:.c=.0)
+
 $(NAME):
 	@echo "[Creating object files and fillit file...]"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
