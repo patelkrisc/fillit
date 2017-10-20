@@ -24,10 +24,7 @@ DEL = rm -f
 
 HDR = /fillit.H
 
-SRC = fillmain.c\
-	  fillcheck.c\
-	  fillvalid.c\
-	  fillsolve.c\
+SRC = filler bullshit until I make something
 
 $(NAME):
 	@echo "[Creating object files and fillit file...]"
