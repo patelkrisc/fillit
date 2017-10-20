@@ -1,4 +1,5 @@
 # fillit
 
+Makefile, author file, and libft uploaded
 
-asdasd
+10/20/17 - 1st Upload

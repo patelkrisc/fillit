@@ -30,7 +30,7 @@ SRC = fillmain.c\
 	  fillsolve.c\
 
 $(NAME):
-	@echo "[Creating object files and libft.a file...]"
+	@echo "[Creating object files and fillit file...]"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
