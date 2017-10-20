@@ -42,7 +42,7 @@ clean:
 	@echo "[*.o files removed!]"
 
 fclean: clean
-	@echo "[Removing libft.a file]"
+	@echo "[Removing fillit file]"
 	@$(DEL) $(NAME)
 	@echo "[fillit removed!]"
 
