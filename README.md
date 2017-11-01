@@ -1,5 +1,5 @@
 # fillit
 
-Makefile, author file, and libft uploaded
+Start of mapgen and main
 
-10/20/17 - 1st Upload
+10/31/17 - 2nd Upload
