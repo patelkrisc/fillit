@@ -22,7 +22,7 @@ RL = ranlib
 
 DEL = rm -f
 
-HDR = /fillit.H
+HDR = /fillit.h
 
 SRC = filler bullshit until I make something
 
