@@ -12,18 +12,6 @@
 
 NAME = libft.a
 
-CC = gcc
-
-CFLAGS = -Wall -Werror -Wextra
-
-AR = ar rc
-
-RL = ranlib
-
-DEL = rm -f
-
-HDR = /libft.h
-
 SRC	= ft_bzero.c\
 	  ft_memalloc.c\
 	  ft_memchr.c\
@@ -91,6 +79,18 @@ SRC	= ft_bzero.c\
 	  ft_tolower.c\
 
 OBJ = $(SRC:.c=.o)
+
+CC = gcc
+
+AR = ar rc
+
+RL = ranlib
+
+HDR = /libft.h
+
+DEL = rm -f
+
+CFLAGS = -Wall -Werror -Wextra
 
 $(NAME):
 	@echo "[Creating object files and libft.a file...]"
