@@ -1,5 +1,5 @@
 # fillit
 
-Start of mapgen and main
+Restructured folders for github
 
-10/31/17 - 2nd Upload
+11/03/17 - 3rd Uploadß
