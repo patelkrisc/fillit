@@ -30,7 +30,7 @@ SRC = main.c\
 OBJ = $(SRC:.c=.0)
 
 $(NAME):
-	@echo "[Creating object files and fillit file...]"
+	@echo "\033[33mCreating object files and fillit file...\033[0m"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
