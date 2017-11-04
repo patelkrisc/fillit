@@ -30,23 +30,23 @@ SRC = main.c\
 OBJ = $(SRC:.c=.0)
 
 $(NAME):
-	@echo "\033[33mCreating object files and fillit file...\033[0m"
+	@echo "\033[33m---Creating object files and fillit file...---\033[0m"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
-	@echo "[Object files created!]"
-	@echo "[fillit created!]"
+	@echo "\033[33m---Object files created!---\033[0m"
+	@echo "\033[33m---fillit created!---\033[0m"
 
 all: $(NAME)
 
 clean:
-	@echo "[Removing *.o files...]"
+	@echo "\033[31m---Removing *.o files...---\033[0m]"
 	@$(DEL) $(OBJ)
-	@echo "[*.o files removed!]"
+	@echo "\033[31m---*.o files removed!---\033[0m"
 
 fclean: clean
-	@echo "[Removing fillit file]"
+	@echo "\033[31m---Removing fillit file---\033[0m"
 	@$(DEL) $(NAME)
-	@echo "[fillit removed!]"
+	@echo "\033[31m---fillit removed!---\033[0m"
 
 re: fclean all
