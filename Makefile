@@ -40,7 +40,7 @@ $(NAME):
 all: $(NAME)
 
 clean:
-	@echo "\033[31m---Removing *.o files...---\033[0m]"
+	@echo "\033[31m---Removing *.o files...---\033[0m"
 	@$(DEL) $(OBJ)
 	@echo "\033[31m---*.o files removed!---\033[0m"
 
