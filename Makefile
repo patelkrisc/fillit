@@ -24,7 +24,8 @@ DEL = rm -f
 
 HDR = /fillit.h
 
-SRC = filler bullshit until I make something
+SRC = main.c\
+	  mgen.c\
 
 OBJ = $(SRC:.c=.0)
 
