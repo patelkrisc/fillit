@@ -6,13 +6,14 @@
 #    By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/21 18:09:06 by kpatel            #+#    #+#              #
-#    Updated: 2017/10/12 19:30:59 by kpatel           ###   ########.fr        #
+#    Updated: 2017/11/17 01:53:44 by wwalker          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 SRC	= ft_bzero.c\
+	  ft_erexit.c\
 	  ft_memalloc.c\
 	  ft_memchr.c\
 	  ft_memccpy.c\
@@ -39,6 +40,7 @@ SRC	= ft_bzero.c\
 	  ft_isprint.c\
 	  ft_ispunct.c\
 	  ft_isspace.c\
+	  ft_istet.c\
 	  ft_isupper.c\
 	  ft_atoi.c\
 	  ft_itoa.c\
@@ -75,6 +77,7 @@ SRC	= ft_bzero.c\
 	  ft_strstr.c\
 	  ft_strsub.c\
 	  ft_strtrim.c\
+	  ft_strtrimeb.c\
 	  ft_toupper.c\
 	  ft_tolower.c\
 
@@ -93,19 +96,19 @@ DEL = rm -f
 CFLAGS = -Wall -Werror -Wextra
 
 $(NAME):
-	@echo "\033[32m---Creating object files and libft.a file...---\033[0m"
+	@echo "\033[33m---Creating object files and libft.a file...---\033[0m"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
-	@echo "\033[32m---Object files created!---\033[0m"
-	@echo "\033[32m---libft.a created!---\033[0m"
+	@echo "\033[33m---Object files created!---\033[0m"
+	@echo "\033[33m---libft.a created!---\033[0m"
 
 all: $(NAME)
 
 clean:
-	@echo "\033[33m---Removing *.o files...---\033[0m"
+	@echo "\033[31m---Removing *.o files...---\033[0m"
 	@$(DEL) $(OBJ)
-	@echo "\033[33m---*.o files removed!---\033[0m"
+	@echo "\033[31m---*.o files removed!---\033[0m"
 
 fclean: clean
 	@echo "\033[31m---Removing libft.a file---\033[0m"

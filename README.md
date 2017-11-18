@@ -2,4 +2,4 @@
 
 Restructured folders for github
 
-11/03/17 - 3rd Uploadß
+11/03/17 - 3rd Upload

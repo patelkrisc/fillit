@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpatel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: kpatel <kpatel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 15:28:33 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/12 18:25:18 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/11/17 01:53:13 by wwalker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ typedef struct		s_list
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
+void				ft_erexit(void);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -38,6 +39,7 @@ int					ft_islower(int c);
 int					ft_isprint(int c);
 int					ft_ispunct(int c);
 int					ft_isspace(int c);
+int					ft_istet(int c);
 int					ft_isupper(int c);
 char				*ft_itoa(int n);
 void				ft_lstadd(t_list **alst, t_list *new);
@@ -89,6 +91,7 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(char *s1, char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+char				*ft_strtrimeb(char const *s);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 

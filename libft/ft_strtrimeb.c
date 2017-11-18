@@ -1,40 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_strtrimeb.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/02 16:23:04 by kpatel            #+#    #+#             */
-/*   Updated: 2017/11/17 17:40:25 by kpatel           ###   ########.fr       */
+/*   Created: 2017/11/17 01:43:02 by wwalker           #+#    #+#             */
+/*   Updated: 2017/11/17 17:29:32 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char	*ft_strtrimeb(char const *s)
 {
-	size_t	i;
-	size_t	j;
-	size_t	k;
-	char	*len;
+	size_t i;
+	size_t j;
 
 	i = 0;
-	j = ft_strlen(s) - 1;
 	if (!s)
 		return (0);
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+	while (s[i] == '.')
 		i++;
-	len = (char *)malloc(sizeof(char) * (j - i + 1));
-	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
+	if (s[i] == '\0')
+		return (ft_strdup(s + i));
+	j = ft_strlen(s) - 1;
+	while (s[j] == '.')
 		j--;
-	k = 0;
-	while (i <= j)
-	{
-		tmp[k] = s[i];
-		i++;
-		k++;
-	}
-	tmp[k] = '\0';
-	return (tmp);
+	return (ft_strsub(s, i, j - i + 1));
 }

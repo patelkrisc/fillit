@@ -1,40 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   store.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/02 16:23:04 by kpatel            #+#    #+#             */
-/*   Updated: 2017/11/17 17:40:25 by kpatel           ###   ########.fr       */
+/*   Created: 2017/11/16 17:25:23 by wwalker           #+#    #+#             */
+/*   Updated: 2017/11/17 15:00:59 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "fillit.h"
 
-char	*ft_strtrim(char const *s)
+int		store_tet(char *str)
 {
-	size_t	i;
-	size_t	j;
-	size_t	k;
-	char	*len;
+	int i;
 
 	i = 0;
-	j = ft_strlen(s) - 1;
-	if (!s)
-		return (0);
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i++;
-	len = (char *)malloc(sizeof(char) * (j - i + 1));
-	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
-		j--;
-	k = 0;
-	while (i <= j)
+	while (str != '\0')
 	{
-		tmp[k] = s[i];
+		ft_strtrimeb(str);
+		ft_memalloc(str[i]);
 		i++;
-		k++;
+		ft_putstr(str);
 	}
-	tmp[k] = '\0';
-	return (tmp);
+	return (1);
 }

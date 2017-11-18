@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_erexit.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
+/*   By: kpatel <kpatel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/13 09:40:18 by wwalker           #+#    #+#             */
-/*   Updated: 2017/11/15 23:19:48 by kpatel           ###   ########.fr       */
+/*   Created: 2017/11/15 22:59:19 by kpatel            #+#    #+#             */
+/*   Updated: 2017/11/15 23:39:38 by wwalker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "libft.h"
 
-int				usage(void)
+void	ft_erexit(void)
 {
-	ft_putstr("Error\n");
-	ft_putstr("Usage: ./fillit 'target_file'\n");
-	return (0);
-}
-
-int				main(int ac, char **av)
-{
-	if (ac != 2)
-		return (usage());
-	read_file(ac, av);
-	return (0);
+	ft_putstr("Error Found. Exiting...\n");
+	exit(1);
 }
